@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="docs/banner.png" width="900">
+  <img src="PicoGoGUI.png" width="900">
 </p>
 
 <h1 align="center">PicoGoGUI</h1>
