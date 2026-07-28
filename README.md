@@ -1,3 +1,21 @@
+
+<p align="center">
+  <img src="docs/banner.png" width="900">
+</p>
+
+<h1 align="center">PicoGoGUI</h1>
+
+<p align="center">
+Modern Windows-first GUI framework for Go.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Go-1.25+-00ADD8?logo=go">
+  <img src="https://img.shields.io/badge/Platform-Windows-0078D4">
+  <img src="https://img.shields.io/badge/License-MIT-green">
+  <img src="https://img.shields.io/badge/WebView2-Required-5C2D91">
+</p>
+
 # PicoGoGUI
 
 > **A modern Windows-first GUI framework for Go.**
