@@ -1,0 +1,15 @@
+{
+  "windowTitle": "MyWindow",
+  "widgets": [
+    {
+      "kind": "label",
+      "id": "label1",
+      "text": "Label"
+    },
+    {
+      "kind": "button",
+      "id": "button1",
+      "text": "Button"
+    }
+  ]
+}

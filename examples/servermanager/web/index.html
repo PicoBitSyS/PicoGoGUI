@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PicoGoGUI Server Manager</title>
+  <style>
+    :root { font-family: "Segoe UI", system-ui, sans-serif; color: #1a1a1a; background: #f3f3f3; }
+    body { margin: 0; padding: 24px; }
+    main { max-width: 520px; }
+    h1 { font-size: 20px; font-weight: 600; }
+    pre { background: #fff; border: 1px solid #d1d1d1; border-radius: 4px; padding: 12px; }
+    button { min-height: 32px; padding: 0 12px; border-radius: 4px; border: 1px solid #d1d1d1; background: #fff; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Server Manager Web UI</h1>
+    <p>Separate HTTP channel — not the PicoGoGUI declarative tree.</p>
+    <button id="refresh" type="button">Refresh status</button>
+    <pre id="out">Loading…</pre>
+  </main>
+  <script>
+    async function load() {
+      const res = await fetch("/api/status");
+      const data = await res.json();
+      document.getElementById("out").textContent = JSON.stringify(data, null, 2);
+    }
+    document.getElementById("refresh").onclick = load;
+    load();
+  </script>
+</body>
+</html>
